@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inspiración</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="stylesheet" type="text/css" href="VSfit_inspiración.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="contenido">
+        <h1>TRANSFORMACIONES DE VS FIT</h1>
+        <p class="bienvenida" id="saludo"></p>
+        <p class="frase">"Tu único rival sos vos mismo, es hora de transformarte en el animatrónico más toro desde la mordida del 87"</p>
+
+        <div class="transformaciones">
+            <div class="persona">
+                <span class="etiqueta">ANTES</span>
+                <img src="img/FREDDY SUPER FAT.jpeg" alt="Antes">
+            </div>
+            <div class="persona">
+                <span class="etiqueta">DESPUÉS</span>
+                <img src="img/FREDDY CHAD.png" alt="Después">
+            </div>
+        </div>
+
+        <p class="contador">Más de 500 personas ya transformaron su cuerpo con VS FIT</p>
+
+        <button id="btnEmpezar" onclick="window.location.href='TXTOin.html'">EMPEZAR</button>
+    </div>
+
+    <script>
+        // Agarra el nombre del usuario guardado y lo saluda
+        var usuario = localStorage.getItem('usuario');
+        if (usuario) {
+            document.getElementById('saludo').textContent = 'Bienvenido, ' + usuario + '!';
+        }
+    </script>
+</body>
+</html>

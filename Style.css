@@ -1,0 +1,103 @@
+/* Título */
+h1 {
+    color: gold;
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    letter-spacing: 3px; 
+    text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.6);
+}
+/* Labels */
+label {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+/* Inputs */
+input[type="text"], input[type="password"] {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid gold;
+    border-radius: 8px;
+    color: white;
+    padding: 8px 12px; /*espacio interno entre el contenido de un elemento y su borde*/
+    outline: none;
+}
+input[type="text"]::placeholder, input[type="password"]::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* Botón "Iniciar Sesión" */
+input[type="submit"] {
+    background-color: gold;
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+input[type="submit"]:hover { /*Se activa cuando pasas el mouse por el botón*/
+    background-color: rgba(255, 217, 0, 0.699);
+}
+/* Inputs, botón iniciar sesión y registrarse todos el mismo ancho */
+input[type="text"], input[type="password"], input[type="submit"], button {
+    width: 250px;
+    box-sizing: border-box; /* para que el padding no rompa el ancho */
+}
+
+/* Botón Registrarse */
+button {
+    background-color: rgb(0, 0, 0);
+    color: gold;
+    border: 1px solid gold;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: bold; /*negrita*/
+    cursor: pointer;  /*es como hover*/
+    margin-top: 5px;
+}
+
+button:hover {  /*hola soy hover*/
+    background-color: rgba(12, 12, 12, 0.514);
+}
+
+/* Sección central */
+#LoginEntero { /*hola zoy dioca*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 8px;
+}
+a {
+    display: block;
+    text-align: center;
+} /*porque estaba desalineado el botón de registrarse. aparentemente un <a> por defecto es inline, lo que significa que no ocupa todo el ancho disponible, sino solo el que necesita */
+select, input[type="number"], input[type="email"] { /* para los nuevos botones del registro*/
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid gold;
+    border-radius: 8px;
+    color: white;
+    padding: 8px 12px;
+    width: 250px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+select option { /*hola*/
+    background-color: black;
+    color: white;
+}
+.fondo-cargando {
+ background-image: url(img/SIGMA.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0; /*no quiero espacio blanco entre bordes*/
+    height: 100vh; /*que ocupe toa a pantasa*/
+    background-attachment: fixed; /*para que ocupe TODO y no lo tape el freddy gordo */
+}

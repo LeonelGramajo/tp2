@@ -1,10 +1,58 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Cargando</title>
+<html>  
+<head> 
+    <title>ddy</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <style>
+        img { /*para fran gordo*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.15; /* para que se vea semitransparente y no tape todo */
+    z-index: 0; /* que quede detrás de la animación */
+}
+        .Cargando{
+            
+            z-index: 1; /* que quede delante de Fran Gordo */
+            position:absolute; /* "No ocupa espacio físico y los demas elementos finjen que no existiera", me permite ser más preciso. Abajo están las cordeenadas precisas. */
+            top:0;
+            left:0;
+            bottom:0;
+            right:0;
+            width: 70px;
+            height: 70px;
+            background:white;
+            border-radius: 50%; /*que se redondee el simbolo*/
+            border: 10px solid gray; /* borde de 20 pixeles color negro, es lo que gira */
+            border-top: 10px solid rgba(199, 171, 12, 0.966); /* no sé lo decia el video */
+            margin: auto; /*es para que no aparezca en el borde izquierdo, y que se centre*/
+            animation-name: girar;
+            animation-duration: 2s;
+            animation-iteration-count:infinite;
+            animation-timing-function: linear;
+
+        }
+        @keyframes girar /*definimos una  animación, después hay que asignarla*/
+        {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(330deg); /*porque 360 no me gusta*/
+            }
+        
+        }
+    </style>
 </head>
-<body>
-    <h1>Gracias por elegirnos!</h1>
-    <p>Cargando...</p>
+<body class="fondo-cargando">
+<img src="img/FRAN GORDO.jpeg" height="100" width="800"> 
+<div class="Cargando"> </div>
+<script> /*javascript hace trabajo de logica, la etiqueta "Script" le dice al navegador que sus contenidos son javascript*/
+    setTimeout(function(){ /*ejecuta algo luego de esperar un tiempo*/
+        window.location.href = "VSfit_inspiración.html"; /*esta función me redirige a otra página*/
+    }, 2000); /*2000 milis=2 segs*/
+</script>
 </body>
 </html>

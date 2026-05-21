@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@700&display=swap'); /*sacamos una fuente de google fonts*/
+
+body {
+    background-color: #1a1a1a;
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255, 215, 0, 0.03) 0px,
+        rgba(255, 215, 0, 0.03) 2px,
+        transparent 2px,
+        transparent 20px
+    );
+    margin: 0;
+    padding: 0;
+}
+
+#creditos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 30px;
+}
+
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 5em;
+    color: gold;
+    text-shadow: 4px 4px 0px black, 6px 6px 0px rgba(255,215,0,0.3);
+    letter-spacing: 6px;
+    text-align: center;
+    transform: rotate(-2deg); /* leve inclinación para que sea más piolaaaaa freddybfazebar */
+}
+
+.subtitulo {
+    font-family: 'Comic Neue', cursive;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    border: 2px dashed gold;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tarjeta, .agradecimiento {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 3px solid gold;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 280px;
+    box-shadow: 0px 0px 20px rgba(255, 215, 0, 0.2);
+    transition: transform 0.2s; /* animación al hover */
+}
+
+.tarjeta:hover, .agradecimiento:hover {
+    transform: scale(1.05) rotate(1deg); /* se agranda un poco al pasar el mouse */
+}
+
+.tarjeta img, .agradecimiento img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid gold;
+}
+
+.tarjeta h2, .agradecimiento h2 {
+    font-family: 'Bangers', cursive;
+    color: gold;
+    font-size: 2em;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.rol {
+    font-family: 'Comic Neue', cursive;
+    color: gold;
+    font-size: 0.95em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.descripcion {
+    font-family: 'Comic Neue', cursive;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.85em;
+    text-align: center;
+}
+
+.agradecimiento {
+    max-width: 350px;
+}
+
+.copyright {
+    font-family: 'Comic Neue', cursive;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 20px;
+}

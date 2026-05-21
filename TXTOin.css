@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    /* Imagen de fondo */
+    background-image:url(img/gimnasio-de-estilo-industrial-con-una-gran-variedad-de-campanas-y-máquinas-para-pescar-367027534.webp);
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    min-height:100vh;
+
+    color:rgb(255, 255, 255);
+}
+
+
+/* ENCABEZADO */
+
+header{
+    padding:20px;
+}
+
+.logo-contenedor{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo-contenedor img{
+    width:45px;
+    height:45px;
+    object-fit:contain;
+}
+
+.logo-contenedor h2{
+    font-size:18px;
+}
+
+
+/* CENTRO */
+
+main{
+    height:80vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+
+.texto-central{
+
+    max-width:700px;
+
+    padding:30px;
+
+    background:rgba(168, 124, 28, 0.55);
+
+    border-radius:20px;
+
+    text-align:center;
+
+    backdrop-filter:blur(1px);
+}
+
+
+.texto-central h1{
+    margin-bottom:20px;
+}
+
+
+.texto-central p{
+    line-height:1.7;
+}
+
+
+
+/* BOTON SOLO TEXTO */
+
+.boton-texto{
+
+    margin-top:25px;
+
+    text-decoration:none;
+
+    color:rgb(255, 255, 255);
+
+    font-size:20px;
+
+    transition:0.3s;
+}
+
+.boton-texto:hover{
+
+    color:#9c7b20bb;
+
+    transform:translateY(-2px);
+
+}
